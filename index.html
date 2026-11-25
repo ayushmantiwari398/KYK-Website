@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | KYK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="topbar"></div>
+    <header><a class="logo" href="index.html" aria-label="KYK Home"><img src="images/kyk-logo.jpg"
+                alt="KYK Keep Your Kart logo"></a>
+        <nav><a href="index.html">Home</a><a href="about.html">About Us</a><a href="categories.html">Categories</a><a
+                href="gallery.html">Gallery</a><a href="contact.html">Contact</a><a href="help.html">Help</a></nav>
+        <div class="header-buttons"><a class="btn light-btn" href="wishlist.html">Wishlist (<span
+                    id="wish-count">0</span>)</a><a class="btn" href="cart.html">Cart (<span
+                    id="cart-count">0</span>)</a><button class="light-btn" type="button"
+                onclick="openProfile()">Profile</button></div>
+    </header>
+    <main class="container">
+        <section class="home-search">
+            <h1>Your Curiosity Should Get a Chance!</h1>
+            <p>With Keep Your Kart</p>
+            <div class="home-search-row"><input id="home-search" type="text"
+                    placeholder="Search for products or categories..."><button
+                    onclick="searchFromHome()">Search</button></div>
+        </section>
+        <section class="seller-strip">
+            <h2>Wanted to sell?</h2>
+            <p>Register your shop and showcase your products to customers.</p><a class="btn" href="seller.html">Register
+                Your Shop</a>
+        </section>
+        <section class="category-background">
+            <h2 class="section-title">Categories</h2>
+            <div class="category-grid">
+                <a class="category-card" href="products.html?category=Grocery"><img
+                        src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=500" alt="Grocery">
+                    <h3>Grocery</h3>
+                </a>
+                <a class="category-card" href="products.html?category=Fashion"><img
+                        src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=500" alt="Fashion">
+                    <h3>Fashion</h3>
+                </a>
+                <a class="category-card" href="products.html?category=Home%20%26%20Living"><img
+                        src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=500" alt="Home and Living">
+                    <h3>Home &amp; Living</h3>
+                </a>
+                <a class="category-card" href="products.html?category=Electronics"><img
+                        src="https://images.unsplash.com/photo-1498049794561-7780e7231661?w=500" alt="Electronics">
+                    <h3>Electronics</h3>
+                </a>
+                <a class="category-card" href="products.html?category=Beauty%20%26%20Care"><img
+                        src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=500" alt="Beauty and Care">
+                    <h3>Beauty &amp; Care</h3>
+                </a>
+                <a class="category-card" href="products.html?category=Bakery%20%26%20Food"><img
+                        src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=500" alt="Bakery">
+                    <h3>Bakery &amp; Food</h3>
+                </a>
+                <a class="category-card" href="products.html?category=Books%20%26%20Stationery"><img
+                        src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=500" alt="Books">
+                    <h3>Books &amp; Stationery</h3>
+                </a>
+                <a class="category-card" href="products.html?category=Sports"><img
+                        src="https://images.unsplash.com/photo-1460039230329-eb070fc6c77c?w=500" alt="Sports">
+                    <h3>Sports</h3>
+                </a>
+            </div>
+        </section>
+        <h2 class="section-title">Popular Products</h2>
+        <div id="product-list" class="product-grid"></div>
+        <p class="centered" style="margin-top:20px"><a class="btn" href="products.html">View All Products</a></p>
+    </main>
+    <footer><b>KYK – Keep Your Kart</b>
+        <p>One place for your everyday shopping.</p>
+        <p><a href="seller.html">Become a Seller</a> | <a href="account.html">My Account</a></p>
+        <p>© 2026 KYK. College project demo.</p>
+    </footer>
+    <div id="profile-modal" class="modal-overlay" onclick="closeProfileOutside(event)">
+        <div class="profile-modal">
+            <button class="modal-close" type="button" onclick="closeProfile()">×</button>
+            <h2>Update Your Profile</h2>
+            <form id="profile-form" onsubmit="saveProfile(event)">
+                <label>Full Name</label><input id="profile-name" required placeholder="Enter full name">
+                <label>Phone Number</label><input id="profile-phone" type="tel" pattern="[0-9]{10}"
+                    placeholder="10 digit number">
+                <label>Email</label><input id="profile-email" type="email" placeholder="Enter email address">
+                <label>Address</label><input id="profile-address" placeholder="Enter address">
+                <label>Pincode</label><input id="profile-pincode" inputmode="numeric" placeholder="Enter pincode">
+                <label>District</label><input id="profile-district" placeholder="Enter district">
+                <button type="submit">Save Profile</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

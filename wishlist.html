@@ -1,0 +1,17 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Wishlist | KYK</title><link rel="stylesheet" href="style.css"></head><body><div class="topbar">Welcome to KYK – Keep Your Kart | Shop from local sellers</div>
+<header><a class="logo" href="index.html" aria-label="KYK Home"><img src="images/kyk-logo.jpg" alt="KYK Keep Your Kart logo"></a>
+<nav><a href="index.html">Home</a><a href="about.html">About Us</a><a href="categories.html">Categories</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a><a href="help.html">Help</a></nav>
+<div class="header-buttons"><a class="btn light-btn" href="wishlist.html">Wishlist (<span id="wish-count">0</span>)</a><a class="btn" href="cart.html">Cart (<span id="cart-count">0</span>)</a><button class="light-btn" type="button" onclick="openProfile()">Profile</button></div></header><main class="container"><h1 class="page-title">My Wishlist</h1><div id="wishlist-items"></div></main><footer><b>KYK – Keep Your Kart</b><p>One place for your everyday shopping.</p><p><a href="seller.html">Become a Seller</a> | <a href="account.html">My Account</a></p><p>© 2026 KYK. College project demo.</p></footer><div id="profile-modal" class="modal-overlay" onclick="closeProfileOutside(event)">
+<div class="profile-modal">
+<button class="modal-close" type="button" onclick="closeProfile()">×</button>
+<h2>Update Your Profile</h2>
+<form id="profile-form" onsubmit="saveProfile(event)">
+<label>Full Name</label><input id="profile-name" required placeholder="Enter full name">
+<label>Phone Number</label><input id="profile-phone" type="tel" pattern="[0-9]{10}" placeholder="10 digit number">
+<label>Email</label><input id="profile-email" type="email" placeholder="Enter email address">
+<label>Address</label><input id="profile-address" placeholder="Enter address">
+<label>Pincode</label><input id="profile-pincode" inputmode="numeric" placeholder="Enter pincode">
+<label>District</label><input id="profile-district" placeholder="Enter district">
+<button type="submit">Save Profile</button>
+</form></div></div>
+<script src="script.js"></script></body></html>
