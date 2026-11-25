@@ -5,7 +5,7 @@ var products=[
 {id:3,name:"Cotton T-Shirt",category:"Fashion",price:399,image:"https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500"},
 {id:4,name:"Casual Shoes",category:"Fashion",price:799,image:"https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500"},
 {id:5,name:"Flower Pot",category:"Home & Living",price:199,image:"https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=500"},
-{id:6,name:"Coffee Mug",category:"Home & Living",price:249,image:"images/coffee mug.jpg"},
+{id:6,name:"Coffee Mug",category:"Home & Living",price:249,image:"coffee mug.jpg"},
 {id:7,name:"Earphones",category:"Electronics",price:499,image:"https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"},
 {id:8,name:"Power Bank",category:"Electronics",price:899,image:"powerbank.jpg"},
 {id:9,name:"Face Wash",category:"Beauty & Care",price:179,image:"https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=500"},
@@ -14,7 +14,7 @@ var products=[
 {id:12,name:"Chocolate Cake",category:"Bakery & Food",price:350,image:"https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500"},
 {id:13,name:"Notebook",category:"Books & Stationery",price:60,image:"https://images.unsplash.com/photo-1531346878377-a5be20888e57?w=500"},
 {id:14,name:"Pen Set",category:"Books & Stationery",price:90,image:"https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=500"},
-{id:15,name:"Football",category:"Sports",price:550,image:"images/football.jpg"},
+{id:15,name:"Football",category:"Sports",price:550,image:"football.jpg"},
 {id:16,name:"Water Bottle",category:"Sports",price:180,image:"https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=500"}
 ];
 function saved(key){return JSON.parse(localStorage.getItem(key)||"[]")}
