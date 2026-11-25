@@ -7,7 +7,7 @@ var products=[
 {id:5,name:"Flower Pot",category:"Home & Living",price:199,image:"https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=500"},
 {id:6,name:"Coffee Mug",category:"Home & Living",price:249,image:"images/coffee mug.jpg"},
 {id:7,name:"Earphones",category:"Electronics",price:499,image:"https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"},
-{id:8,name:"Power Bank",category:"Electronics",price:899,image:"images/powerbank.jpg"},
+{id:8,name:"Power Bank",category:"Electronics",price:899,image:"powerbank.jpg"},
 {id:9,name:"Face Wash",category:"Beauty & Care",price:179,image:"https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=500"},
 {id:10,name:"Shampoo",category:"Beauty & Care",price:220,image:"https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=500"},
 {id:11,name:"Cookies",category:"Bakery & Food",price:100,image:"https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=500"},
