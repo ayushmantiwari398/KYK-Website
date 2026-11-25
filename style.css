@@ -63,7 +63,7 @@ header nav { justify-content: center; }
 header .header-buttons { justify-content: center; }
 /* Uploaded hand-drawn doodle image behind the category cards */
 .category-background {
-  background-image: url("images/category-doodle-background.jpg");
+  background-image: url("category-doodle-background.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
